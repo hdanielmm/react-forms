@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Charts } from './uncontrolledFormInputs/Charts';
+import UncontrolledFormInput from './uncontrolledFormInputs/UncontrolledFormInput';
+import Emoji from './Emoji';
 
 function App() {
+
+  const send = (data) => {
+    console.log(data)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Emoji label="Rhinoceros" symbol="🦏" />
+      <h3>How to use refs</h3>
+      <Charts />
+      <UncontrolledFormInput 
+        onSend={send}
+      />
     </div>
   );
 }
