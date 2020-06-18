@@ -2,6 +2,7 @@ import React from 'react';
 import { Charts } from './uncontrolledFormInputs/Charts';
 import UncontrolledFormInput from './uncontrolledFormInputs/UncontrolledFormInput';
 import Emoji from './Emoji';
+import ControlledFormInputs from './controlledFormInputs/ControlledFormInputs';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <UncontrolledFormInput 
         onSend={send}
       />
+      <ControlledFormInputs />
     </div>
   );
 }
